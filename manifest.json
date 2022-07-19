@@ -1,0 +1,13 @@
+{
+  "name": "AnyBackground",
+  "description":  "Changes the background for Any.do",
+  "version":  "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab"],
+  "content_scripts":  [
+    {
+      "matches": ["https://desktop.any.do/agenda"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
